@@ -7,7 +7,7 @@ Home: https://github.com/automl/TabPFN
 
 Package license: Apache-2.0
 
-Summary: Interface for using TabPFN and library to train TabPFN'
+Summary: Foundation model for tabular data
 
 Current build status
 ====================
