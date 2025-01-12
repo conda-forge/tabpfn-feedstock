@@ -44,7 +44,6 @@ about:
   license: Apache-2.0
   license_file:
     - LICENSE.txt
-    - NOTICE.txt
 
 extra:
   recipe-maintainers:
