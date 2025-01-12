@@ -39,7 +39,7 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/automl/TabPFN
+  home: https://github.com/PriorLabs/TabPFN
   summary: Foundation model for tabular data
   license: Apache-2.0
   license_file:
