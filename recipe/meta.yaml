@@ -27,7 +27,7 @@ requirements:
     - scipy
     - pandas
     - einops
-    - huggingface-hub
+    - huggingface_hub
 
 test:
   imports:
