@@ -1,5 +1,5 @@
 {% set name = "tabpfn" %}
-{% set version = "0.1.10" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tabpfn-{{ version }}.tar.gz
-  sha256: 4567b288bb9c8ba5971cf0634e4b0cfd752a31f751564691cb42f6fc9983fc7b
+  sha256: 9cb334266cc8ea03741cfe592c8f14c856a99087163f7d48713183c460ba7820
 
 build:
   noarch: python
@@ -17,15 +17,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - hatchling
+    - setuptools
     - pip
   run:
     - python >={{ python_min }}
-    - pytorch >=1.9.0
-    - scikit-learn >=0.24.2
-    - pyyaml >=5.4.1
-    - numpy >=1.21.2
-    - requests >=2.23.0
+    - pytorch >=2.1
+    - scikit-learn >=1
+    - scipy
+    - pandas
+    - einops
+    - huggingface_hub
 
 test:
   imports:
@@ -37,12 +38,11 @@ test:
     - python {{ python_min }}
 
 about:
-  home: https://github.com/automl/TabPFN
-  summary: Interface for using TabPFN and library to train TabPFN'
+  home: https://github.com/PriorLabs/TabPFN
+  summary: Foundation model for tabular data
   license: Apache-2.0
   license_file:
     - LICENSE.txt
-    - NOTICE.txt
 
 extra:
   recipe-maintainers:

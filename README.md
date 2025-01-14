@@ -3,11 +3,11 @@ About tabpfn-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tabpfn-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/automl/TabPFN
+Home: https://github.com/PriorLabs/TabPFN
 
 Package license: Apache-2.0
 
-Summary: Interface for using TabPFN and library to train TabPFN'
+Summary: Foundation model for tabular data
 
 Current build status
 ====================
