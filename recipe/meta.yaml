@@ -27,6 +27,7 @@ requirements:
     - pandas
     - einops
     - huggingface_hub
+    - pydantic
 
 test:
   imports:
