@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python 3.10
     - setuptools
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=3.10
     - pytorch >=2.1
     - scikit-learn >=1
     - scipy
@@ -36,7 +36,7 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
+    - python 3.10
 
 about:
   home: https://github.com/PriorLabs/TabPFN
