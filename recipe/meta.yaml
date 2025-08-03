@@ -1,5 +1,6 @@
 {% set name = "tabpfn" %}
 {% set version = "2.1.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -28,6 +29,7 @@ requirements:
     - einops
     - huggingface_hub
     - pydantic
+    - pydantic-settings
 
 test:
   imports:
