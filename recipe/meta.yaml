@@ -1,5 +1,6 @@
 {% set name = "tabpfn" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tabpfn-{{ version }}.tar.gz
-  sha256: bb74732d63a7cd419aaf71fbfeacd12c1a717b0a50342ae17f0736ddbad04dc5
+  sha256: fdfd522545f1d19c0b4953733471f797b1073ee387ea3db861ff4c43731b61da
 
 build:
   noarch: python
@@ -16,17 +17,20 @@ build:
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python 3.10
     - setuptools
     - pip
   run:
-    - python >={{ python_min }}
+    - python >=3.10
     - pytorch >=2.1
+    - pytorch-cpu >=2.7.1
     - scikit-learn >=1
     - scipy
     - pandas
     - einops
     - huggingface_hub
+    - pydantic
+    - pydantic-settings
 
 test:
   imports:
@@ -35,7 +39,7 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
+    - python 3.10
 
 about:
   home: https://github.com/PriorLabs/TabPFN
