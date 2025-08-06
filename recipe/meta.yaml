@@ -23,6 +23,7 @@ requirements:
   run:
     - python >=3.10
     - pytorch >=2.1
+    - pytorch-cpu >=2.7.1
     - scikit-learn >=1
     - scipy
     - pandas
