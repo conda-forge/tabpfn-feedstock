@@ -23,6 +23,7 @@ requirements:
     - python >={{ python_min }}
     - pytorch >=2.1
     - scikit-learn >=1
+    - pydantic
     - scipy
     - pandas
     - einops
