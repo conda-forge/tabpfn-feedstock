@@ -1,5 +1,5 @@
 {% set name = "tabpfn" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tabpfn-{{ version }}.tar.gz
-  sha256: bb74732d63a7cd419aaf71fbfeacd12c1a717b0a50342ae17f0736ddbad04dc5
+  sha256: d7140c9a76d433f70810bfcc9c5343bdfd5de5c4b51c09e84b701abbd7c449a9
 
 build:
   noarch: python
