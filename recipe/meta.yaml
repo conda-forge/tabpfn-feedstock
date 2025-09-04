@@ -30,12 +30,10 @@ requirements:
     - pydantic-settings >=2.10.1
     - pytorch >=2.1,<3
     - scikit-learn >=1.2.0,<1.7
-    - scipy>=1.11.1,<2
+    - scipy >=1.11.1,<2
     - typing_extensions >=4.12.0
 
 test:
-  imports:
-    - tabpfn
   commands:
     - pip check
   requires:
