@@ -38,7 +38,7 @@ test:
     - pip check
   requires:
     - pip
-    - python 3.10
+    - python {{ python_min }}
 
 about:
   home: https://github.com/PriorLabs/TabPFN
