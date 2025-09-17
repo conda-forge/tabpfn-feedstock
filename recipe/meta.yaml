@@ -1,5 +1,5 @@
 {% set name = "tabpfn" %}
-{% set version = "2.1.3" %}
+{% set version = "2.2.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tabpfn-{{ version }}.tar.gz
-  sha256: d7140c9a76d433f70810bfcc9c5343bdfd5de5c4b51c09e84b701abbd7c449a9
+  sha256: 706c03c3d3dc478118561761c29fa95727b6e239671922c4c40a8e4b3cc28fbf
 
 build:
   noarch: python
@@ -21,6 +21,8 @@ requirements:
     - setuptools
     - pip
   run:
+    - joblib >=1.2.0
+    - tabpfn-common-utils >=0.1.8
     - python >={{ python_min }}
     - einops >=0.2.0,<0.9
     - eval-type-backport >=0.2.2
