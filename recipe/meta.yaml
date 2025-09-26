@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -36,6 +36,8 @@ requirements:
     - typing_extensions >=4.12.0
 
 test:
+  imports:
+    - tabpfn
   commands:
     - pip check
   requires:
