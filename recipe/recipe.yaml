@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: 6.2.0
+  version: 6.2.1
   python_min: 3.10
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: 1baba059acb84efddd5423bd1225dc6c8824773013edd9ca5f3ebd1756868559
+  sha256: f99b1fe793a6d5bdd495a2bd6f504c587e1e568630eea7cfd05525f6384c6991
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - pip
   run:
     - joblib >=1.2.0
-    - tabpfn-common-utils >=0.2.8
+    - tabpfn-common-utils >=0.2.13
     - python >=${{ python_min }}
     - einops >=0.2.0,<0.9
     - eval-type-backport >=0.2.2
@@ -37,7 +37,7 @@ requirements:
     - scipy >=1.11.1,<2
     - typing_extensions >=4.12.0
     - numpy >=1.21.6,<3
-    - huggingface_hub >=0.19.0,<2
+    - huggingface-hub >=0.19.0,<2
 tests:
   - python:
       imports:
