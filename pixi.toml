@@ -4,10 +4,10 @@
 "$schema" = "https://pixi.sh/v0.59.0/schema/manifest/schema.json"
 
 [workspace]
-name = "tabpfn-feedstock"
+name = "conda-forge-fix-1767631976"
 version = "3.54.1"  # conda-smithy version used to generate this file
-description = "Pixi configuration for conda-forge/tabpfn-feedstock"
-authors = ["@conda-forge/tabpfn"]
+description = "Pixi configuration for conda-forge/conda-forge-fix-1767631976"
+authors = ["@conda-forge/conda-forge-fix-"]
 channels = ["conda-forge"]
 platforms = ["linux-64", "osx-64", "win-64"]
 requires-pixi = ">=0.59.0"
@@ -22,13 +22,13 @@ cmd = "inspect_artifacts --all-packages"
 description = "List contents of all packages found in rattler-build build directory."
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
-description = "Build tabpfn-feedstock directly (without setup scripts), no particular variant specified"
+description = "Build conda-forge-fix-1767631976 directly (without setup scripts), no particular variant specified"
 [tasks."build-linux_64_"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_.yaml"
-description = "Build tabpfn-feedstock with variant linux_64_ directly (without setup scripts)"
+description = "Build conda-forge-fix-1767631976 with variant linux_64_ directly (without setup scripts)"
 [tasks."inspect-linux_64_"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_.yaml"
-description = "List contents of tabpfn-feedstock packages built for variant linux_64_"
+description = "List contents of conda-forge-fix-1767631976 packages built for variant linux_64_"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
