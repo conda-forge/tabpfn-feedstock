@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: 6.2.1
+  version: 6.3.0
   python_min: 3.10
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: f99b1fe793a6d5bdd495a2bd6f504c587e1e568630eea7cfd05525f6384c6991
+  sha256: 8cf9c40d8368623c36ca6491a9f0cc15b85f87e044b5c12249b8a1739222cf5c
 
 build:
   number: 0
@@ -37,7 +37,7 @@ requirements:
     - scipy >=1.11.1,<2
     - typing_extensions >=4.12.0
     - numpy >=1.21.6,<3
-    - huggingface_hub >=0.19.0,<2
+    - huggingface-hub >=0.19.0,<2
 tests:
   - python:
       imports:
