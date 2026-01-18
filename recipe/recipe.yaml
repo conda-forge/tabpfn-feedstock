@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: 6.3.0
+  version: "6.3.1"
   python_min: 3.10
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: 8cf9c40d8368623c36ca6491a9f0cc15b85f87e044b5c12249b8a1739222cf5c
+  sha256: f25f174b06934cb851e78d6f7d43603e800d03dde415546a927c1a23d018d66e
 
 build:
   number: 0
