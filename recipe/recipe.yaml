@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: "6.3.1"
+  version: 6.3.2
   python_min: 3.10
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: f25f174b06934cb851e78d6f7d43603e800d03dde415546a927c1a23d018d66e
+  sha256: 58cfff366dba24c16f400f7cc77f12b05efada17050f3ab90010775c6c758da3
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - python >=${{ python_min }}
     - einops >=0.2.0,<0.9
     - eval-type-backport >=0.2.2
-    - pandas >=1.4.0,<3
+    - pandas >=1.4.0,<4
     - pydantic >=2.8.0
     - pydantic-settings >=2.10.1
     - pytorch >=2.1,<3
