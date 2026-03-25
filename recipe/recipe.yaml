@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: 6.4.1
+  version: 7.0.0
   python_min: 3.10
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: 339470e3c9d74e678e7eed9422f0cc64838e9080a21402edfb5939248edbbefb
+  sha256: 55650a034c2dcd8577df1df53a1603799838c1bc111af3cf07fe8376a4b269af
 
 build:
   number: 0
@@ -27,12 +27,12 @@ requirements:
     - joblib >=1.2.0
     - tabpfn-common-utils >=0.2.13
     - python >=${{ python_min }}
-    - einops >=0.2.0
+    - einops >=0.4.0
     - eval-type-backport >=0.2.2
     - pandas >=1.4.0
     - pydantic >=2.8.0
     - pydantic-settings >=2.10.1
-    - pytorch >=2.1
+    - pytorch >=2.5
     - scikit-learn >=1.2.0
     - scipy >=1.11.1
     - typing_extensions >=4.12.0
