@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: "8.0.3"
+  version: "8.0.6"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: 43bb8ba1b3dbe44dd9ad14fdcbb700c083092fde5c9e2094313b35fa1b3546a8
+  sha256: 9faed458af23a327f8560c45aed5f2e3885fad87c541836b7811117e5c3f4ba3
 
 build:
   number: 0
@@ -40,6 +40,7 @@ requirements:
     - huggingface_hub >=0.23.0
     - filelock >=3.11.0
     - lightgbm >=3.0
+    - safetensors
     - tqdm >=4.66.0
 tests:
   - python:
