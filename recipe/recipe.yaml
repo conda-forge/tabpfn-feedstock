@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: tabpfn
-  version: "8.5.0"
-  python_min: '3.10'
+  version: "9.0.0"
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn-${{ version }}.tar.gz
-  sha256: 3dac11cbd54000135c8a11d12ffb1e270b8a7bb77bfa4a4647210a7f708f7c82
+  sha256: a4a845309b682eb3d58065eb5cec72e585dde3f639489a36e18948a8ace4245c
 
 build:
   number: 0
@@ -42,6 +42,10 @@ requirements:
     - lightgbm >=3.0
     - safetensors
     - tqdm >=4.66.0
+    # skrub <0.10.1 breaks with joblib >=1.6.0, which dropped its vendored
+    # cloudpickle (joblib.externals.cloudpickle); fixed in skrub 0.10.1.
+    - skrub >=0.10.1,<0.11
+    - matplotlib-base >=3.6.1
 tests:
   - python:
       imports:
